@@ -1,0 +1,161 @@
+{
+  "name": "PETS VS SLIMES [RELEASE]",
+  "tree": {
+    "$className": "DataModel",
+
+    "Workspace": {
+      "$className": "Workspace",
+      "$properties": {
+        "StreamingEnabled": false,
+        "Gravity": 196.2,
+        "FallenPartsDestroyHeight": -100
+      },
+    },
+
+    "Lighting": {
+      "$className": "Lighting",
+      "$properties": {
+        "ClockTime": 14.5,
+        "GeographicLatitude": 20,
+        "Brightness": 2.1,
+        "ExposureCompensation": -0.05,
+        "Ambient":         [0.55, 0.56, 0.50],
+        "OutdoorAmbient":  [0.62, 0.64, 0.58],
+        "ColorShift_Top":    [1.0, 0.95, 0.82],
+        "ColorShift_Bottom": [0.85, 0.90, 1.0],
+        "GlobalShadows":   true,
+        "ShadowSoftness":  0.8,
+        "FogColor":        [0.80, 0.88, 0.96],
+        "FogEnd":          1600,
+        "FogStart":        700,
+        "Technology":      "Future"
+      },
+      "Atmosphere": {
+        "$className": "Atmosphere",
+        "$properties": {
+          "Density":  0.25,
+          "Offset":   0.10,
+          "Color":    [0.90, 0.94, 1.0],
+          "Decay":    [0.82, 0.80, 0.74],
+          "Glare":    0.0,
+          "Haze":     0.4
+        }
+      },
+      "Bloom": {
+        "$className": "BloomEffect",
+        "$properties": {
+          "Intensity": 0.12,
+          "Size":      24,
+          "Threshold": 2.0
+        }
+      },
+      "ColorGrade": {
+        "$className": "ColorCorrectionEffect",
+        "$properties": {
+          "Brightness":  0.03,
+          "Contrast":    0.12,
+          "Saturation":  0.28,
+          "TintColor":   [1.0, 0.99, 0.95]
+        }
+      },
+      "SunRays": {
+        "$className": "SunRaysEffect",
+        "$properties": {
+          "Intensity": 0.12,
+          "Spread":    0.85
+        }
+      },
+      "Sky": {
+        "$className": "Sky",
+        "$properties": {
+          "SkyboxBk": "rbxassetid://159454299",
+          "SkyboxDn": "rbxassetid://159454296",
+          "SkyboxFt": "rbxassetid://159454293",
+          "SkyboxLf": "rbxassetid://159454300",
+          "SkyboxRt": "rbxassetid://159454302",
+          "SkyboxUp": "rbxassetid://159454297",
+          "StarCount": 0,
+          "SunAngularSize": 18,
+          "MoonAngularSize": 11
+        }
+      }
+    },
+
+    "ServerScriptService": {
+      "$className": "ServerScriptService",
+      "WorldSetup": {
+        "$path": "src/server/WorldSetup.server.luau"
+      },
+      "PlayerData": {
+        "$path": "src/server/PlayerData.luau"
+      },
+      "RollHandler": {
+        "$path": "src/server/RollHandler.server.luau"
+      },
+      "CombatHandler": {
+        "$path": "src/server/CombatHandler.server.luau"
+      },
+      "MonetizationHandler": {
+        "$path": "src/server/MonetizationHandler.server.luau"
+      },
+      "TradeHandler": {
+        "$path": "src/server/TradeHandler.server.luau"
+      },
+      "AdminCommands": {
+        "$path": "src/server/AdminCommands.server.luau"
+      },
+      "LeaderboardMonuments": {
+        "$path": "src/server/LeaderboardMonuments.server.luau"
+      }
+    },
+
+    "ReplicatedStorage": {
+      "$className": "ReplicatedStorage",
+      "Shared": {
+        "$className": "Folder",
+        "Config": {
+          "$path": "src/shared/Config.luau"
+        },
+        "Remotes": {
+          "$path": "src/shared/Remotes.luau"
+        },
+        "PetFace": {
+          "$path": "src/shared/PetFace.luau"
+        }
+      }
+    },
+
+    "StarterGui": {
+      "$className": "StarterGui",
+      "$properties": {
+        "ResetPlayerGuiOnSpawn": false
+      }
+    },
+
+    "StarterPlayer": {
+      "$className": "StarterPlayer",
+      "$properties": {
+        "CharacterWalkSpeed": 20,
+        "CharacterJumpHeight": 7.2,
+        "CameraMaxZoomDistance": 45,
+        "CameraMinZoomDistance": 8
+      },
+      "StarterPlayerScripts": {
+        "$className": "StarterPlayerScripts",
+        "RollClient": {
+          "$path": "src/client/RollClient.client.luau"
+        },
+        "TradeClient": {
+          "$path": "src/client/TradeClient.client.luau"
+        },
+        "MusicPlayer": {
+          "$path": "src/client/MusicPlayer.client.luau"
+        },
+        "AutoRollClient": {
+          "$path": "src/client/AutoRollClient.client.luau"
+        }
+      }
+    }
+  }
+}
+

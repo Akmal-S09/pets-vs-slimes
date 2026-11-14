@@ -1,0 +1,21 @@
+# Roblox Studio place and model exports are generated or binary artifacts.
+*.rbxl
+*.rbxlx
+*.rbxm
+*.rbxmx
+
+# Keep credentials and local environment settings out of version control.
+.env
+.env.*
+*.pem
+*.key
+*.pfx
+
+# Local editor and temporary files.
+.DS_Store
+Thumbs.db
+.tools/
+Backups/
+*.bak
+*.tmp
+

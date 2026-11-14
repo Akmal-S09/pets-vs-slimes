@@ -11,6 +11,10 @@ An original Roblox pet-rolling and slime-combat game built with Luau and Rojo. P
 - A generated 3D valley world with a spawn plaza, zone gates, and environmental decoration.
 - Rojo project structure that keeps shared configuration, server logic, and client UI separate.
 
+## Gameplay demo
+
+[Watch the 1:51 playtest](demo/PetsVsSlimes-Playtest.mp4). It shows the spawn area, a pet roll, backpack and pet management, auto combat, and coin progression.
+
 ## Run locally
 
 Requirements: Roblox Studio, Rojo 7.7 or compatible, and the Rojo Studio plugin.
@@ -41,18 +45,6 @@ default.project.json
 
 ## Playtest status
 
-The current source was built with Rojo and opened in Roblox Studio on November 15, 2026. A local play session loaded the valley and player interface. The Developer Console showed no script errors and no longer showed the invalid music asset ID. One asset warning remains: `rbxassetid://203785492` has an asset type that does not match the requested type. This warning should be traced before presenting the game as a polished release.
+The current source was built with Rojo and opened in Roblox Studio on November 15, 2026. A local play session loaded the valley and player interface, and a pet roll completed. The Developer Console showed no script errors. Unverified background music IDs were removed from the playlist, so background music is currently disabled until replacement tracks are verified. One asset warning remains: `rbxassetid://203785492` has an asset type that does not match the requested type. A search found no reference to that ID in tracked source, so its origin is unresolved.
 
 The downloaded UI-fix copy was inspected separately and is not part of this source tree. The older published Roblox place file was not used as the source of truth and was not changed. No Roblox experience was published or updated during this verification.
-
-## Portfolio demo checklist
-
-Capture a short Studio or published-game recording that shows:
-
-1. Spawn plaza and world layout.
-2. One pet roll and the resulting Backpack entry.
-3. Equipping a pet and showing it follow the player.
-4. A slime fight, coin reward, and one upgrade or zone interaction.
-
-Record only features that work in the final recording; mention any remaining limitations plainly.
-

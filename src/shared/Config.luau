@@ -439,16 +439,10 @@ Config.COMBO_WINDOW  = 0.5    -- seconds between kills to extend combo
 Config.COMBO_BONUS   = 0.20   -- +20% goop per combo stack above 1
 
 -- ─── BACKGROUND MUSIC ────────────────────────────────────────────────────────
--- Roblox audio asset IDs played as a shuffled background playlist by
--- MusicPlayer.client.luau. Audio privacy: for a published game make sure each
--- ID is a track you own or that is set "public". Swap these for your own.
+-- Keep the playlist empty until replacement tracks are verified in Studio.
+-- Unverified Roblox audio IDs can fail to load and clutter the runtime console.
 Config.MUSIC_VOLUME = 0.35
-Config.MUSIC_TRACKS = {
-	1837879082,   -- calm / chiptune-style loops (replace with owned/public audio)
-	1845756489,
-	1843463529,
-	1836965135,
-}
+Config.MUSIC_TRACKS = {}
 
 -- ─── Number formatting (500, 12.5K, 3.4M, 1.2B, 5T) ──────────────────────────
 function Config.fmtNum(n)
@@ -466,4 +460,3 @@ function Config.fmtNum(n)
 end
 
 return Config
-
